@@ -1,0 +1,17 @@
+.progress {
+  height: 3px;
+  width: 83vw;
+  outline: none;
+  background: linear-gradient(to right, var(--underline) 0%, var(--underline) 54%, #C4C4C4 54%, #C4C4C4 100%);
+ 
+  -webkit-appearance: none;
+}
+
+.progress::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: #ffffff;
+}
