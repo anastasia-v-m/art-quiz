@@ -7,7 +7,7 @@ const Home = {
         <div class="ellipse" id="ellipse2"></div>
         <span>Art Quiz</span>
       </div>
-      <div class="quizes">
+      <div class="quize-buttons">
         <div class="toQuiz common-button Art"><a href="#categories/art">Art Quiz</a></div>
         <div class="toQuiz common-button Pict"><a href="#categories/pict">Picture Quiz</a></div>
       </div>

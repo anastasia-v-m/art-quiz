@@ -1,21 +1,25 @@
 import Home from './views/Home.js';
 import Footer from './views/Footer.js'; 
-// import ArtQuiz from './views/ArtQuiz.js'; //console.log(ArtQuiz)
-// import PictQuiz from './views/PictQuiz.js';
-import Categories from './views/Categories.js';//console.log(Categories.render())
+import ArtQuiz from './views/ArtQuiz.js';
+import PictQuiz from './views/PictQuiz.js';
+import Categories from './views/Categories.js';
 import Utils from './js/Utils.js';
 
+// import { router as logEvents } from './middlewares/logging.js';
+// import {user} from './user.js';
 
+// List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
   'home': Home,
-  // 'artquiz': ArtQuiz,
-  // 'pictquiz': PictQuiz,
+  'artquiz': ArtQuiz,
+  'pictquiz': PictQuiz,
   'categories': Categories,
 };
 
+// The router code. 
+//Takes a URL, checks against the list of supported routes and then renders the corresponding content page.
 const router = async () => {
-  //console.log('***')
-  const header = document.querySelector('header');
+  const header = null || document.querySelector('header');
   const content = document.querySelector('main');
   const footer = document.querySelector('footer');
   
